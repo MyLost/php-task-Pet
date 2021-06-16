@@ -1,0 +1,13 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+create_pet:
+  path: /api/v1/pets
+  controller: App\Controller\PetController::createAction
+  methods: POST|OPTIONS
+
+search_pet:
+  path: /api/v1/pets/search
+  controller: App\Controller\PetController::searchAction
+  methods: GET|OPTIONS
